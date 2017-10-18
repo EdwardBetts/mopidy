@@ -114,7 +114,7 @@ class Command(object):
         self._arguments.append((args, kwargs))
 
     def set(self, **kwargs):
-        """Override a value in the finaly result of parsing."""
+        """Override a value in the finally result of parsing."""
         self._overrides.update(kwargs)
 
     def exit(self, status_code=0, message=None, usage=None):
@@ -276,7 +276,7 @@ class RootCommand(Command):
             '--config',
             action='store', dest='config_files', type=config_files_type,
             default=DEFAULT_CONFIG, metavar='FILES',
-            help='config files to use, colon seperated, later files override')
+            help='config files to use, colon separated, later files override')
         self.add_argument(
             '-o', '--option',
             action='append', dest='config_overrides',

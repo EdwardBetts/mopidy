@@ -469,13 +469,13 @@ class TracklistController(object):
 
     def filter(self, criteria=None, **kwargs):
         """
-        Filter the tracklist by the given criterias.
+        Filter the tracklist by the given criteria.
 
         A criteria consists of a model field to check and a list of values to
         compare it against. If the model field matches one of the values, it
         may be returned.
 
-        Only tracks that matches all the given criterias are returned.
+        Only tracks that matches all the given criteria are returned.
 
         Examples::
 

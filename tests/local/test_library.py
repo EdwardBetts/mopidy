@@ -16,7 +16,7 @@ from mopidy.models import Album, Artist, Image, Track
 from tests import path_to_data_dir
 
 
-# TODO: update tests to only use backend, not core. we need a seperate
+# TODO: update tests to only use backend, not core. we need a separate
 # core test that does this integration test.
 class LocalLibraryProviderTest(unittest.TestCase):
     artists = [

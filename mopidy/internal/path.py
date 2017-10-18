@@ -209,7 +209,7 @@ def is_path_inside_base_dir(path, base_path):
     real_path = os.path.realpath(path)
 
     if os.path.isfile(path):
-        # Use dir of file for prefix comparision, so we don't accept
+        # Use dir of file for prefix comparison, so we don't accept
         # /tmp/foo.m3u as being inside /tmp/foo, simply because they have a
         # common prefix, /tmp/foo, which matches the base path, /tmp/foo.
         real_path = os.path.dirname(real_path)

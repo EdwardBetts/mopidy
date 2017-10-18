@@ -2350,7 +2350,7 @@ one new.
 
 - Developers running Mopidy from a Git clone now need to run ``python setup.py
   develop`` to register the bundled extensions. If you don't do this, Mopidy
-  will not find any frontends or backends. Note that we highly recomend you do
+  will not find any frontends or backends. Note that we highly recommend you do
   this in a virtualenv, not system wide. As a bonus, the command also gives
   you a ``mopidy`` executable in your search path.
 
@@ -2788,7 +2788,7 @@ long time been our most requested feature. Finally, it's here!
 Internally, Mopidy have seen a lot of changes to pave the way for multiple
 backends and the future HTTP frontend.
 
-- A new layer and actor, "core", has been added to our stack, inbetween the
+- A new layer and actor, "core", has been added to our stack, between the
   frontends and the backends. The responsibility of the core layer and actor is
   to take requests from the frontends, pass them on to one or more backends,
   and combining the response from the backends into a single response to the
@@ -2814,7 +2814,7 @@ backends and the future HTTP frontend.
   dependencies where looked up in Pykka's actor registry.
 
 - All properties in the core API now got getters, and setters if setting them
-  is allowed. They are not explictly listed in the docs as they have the same
+  is allowed. They are not explicitly listed in the docs as they have the same
   behavior as the documented properties, but they are available and may be
   used. This is useful for the future HTTP frontend.
 
@@ -3317,7 +3317,7 @@ minor bugs.
   The GStreamer `appsrc` bin wasn't being linked due to lack of default caps.
   (Fixes: :issue:`85`)
 
-- Fix crash in :mod:`mopidy.mixers.nad` that occures at startup when the
+- Fix crash in :mod:`mopidy.mixers.nad` that occurs at startup when the
   :mod:`io` module is available. We used an `eol` keyword argument which is
   supported by :meth:`serial.FileLike.readline`, but not by
   :meth:`io.RawBaseIO.readline`.  When the :mod:`io` module is available, it is
@@ -3867,7 +3867,7 @@ Enjoy the best alpha relase of Mopidy ever :-)
   - :meth:`mopidy.backends.BaseCurrentPlaylistController.add()` now returns the
     ``cp_track`` added to the current playlist.
   - :meth:`mopidy.backends.BaseCurrentPlaylistController.remove()` now takes
-    criterias, just like
+    criteria, just like
     :meth:`mopidy.backends.BaseCurrentPlaylistController.get()`.
   - :meth:`mopidy.backends.BaseCurrentPlaylistController.get()` now returns a
     ``cp_track``.
@@ -3953,7 +3953,7 @@ v0.1.0a0 (2010-03-27)
 Raymond in *The Cathedral and the Bazaar*.
 
 Three months of development should be more than enough. We have more to do, but
-Mopidy is working and usable. 0.1.0a0 is an alpha release, which basicly means
+Mopidy is working and usable. 0.1.0a0 is an alpha release, which basically means
 we will still change APIs, add features, etc. before the final 0.1.0 release.
 But the software is usable as is, so we release it. Please give it a try and
 give us feedback, either at our IRC channel or through the `issue tracker

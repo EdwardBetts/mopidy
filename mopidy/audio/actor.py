@@ -682,7 +682,7 @@ class Audio(pykka.ThreadingActor):
         """
         Notify GStreamer that it should start playback.
 
-        :rtype: :class:`True` if successfull, else :class:`False`
+        :rtype: :class:`True` if successful, else :class:`False`
         """
         return self._set_state(Gst.State.PLAYING)
 
@@ -690,7 +690,7 @@ class Audio(pykka.ThreadingActor):
         """
         Notify GStreamer that it should pause playback.
 
-        :rtype: :class:`True` if successfull, else :class:`False`
+        :rtype: :class:`True` if successful, else :class:`False`
         """
         return self._set_state(Gst.State.PAUSED)
 
@@ -709,7 +709,7 @@ class Audio(pykka.ThreadingActor):
         """
         Notify GStreamer that is should stop playback.
 
-        :rtype: :class:`True` if successfull, else :class:`False`
+        :rtype: :class:`True` if successful, else :class:`False`
         """
         self._buffering = False
         return self._set_state(Gst.State.NULL)
@@ -752,7 +752,7 @@ class Audio(pykka.ThreadingActor):
         :param state: State to set playbin to. One of: `Gst.State.NULL`,
             `Gst.State.READY`, `Gst.State.PAUSED` and `Gst.State.PLAYING`.
         :type state: :class:`Gst.State`
-        :rtype: :class:`True` if successfull, else :class:`False`
+        :rtype: :class:`True` if successful, else :class:`False`
         """
         self._target_state = state
         result = self._playbin.set_state(state)

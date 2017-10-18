@@ -115,7 +115,7 @@ When creating an instance, you can specify the following settings:
     or with an object of named arguments, like ``mopidy.foo.bar({id: 2})``. The
     advantage of the "by-position-or-by-name" calling convention is that
     arguments with default values can be left out of the named argument object.
-    Using named arguments also makes the code more readable, and more resistent
+    Using named arguments also makes the code more readable, and more resistant
     to future API changes.
 
     .. note::

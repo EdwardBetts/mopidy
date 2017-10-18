@@ -130,7 +130,7 @@ be of use for testing that your setup works correctly.
    UPnP-Inspector's device list.
 
 4. If you expand the tree item saying ``Mopidy
-   (MediaRenderer:2)`` or similiar, and then the sub element named
+   (MediaRenderer:2)`` or similar, and then the sub element named
    ``AVTransport:2`` or similar, you'll find a list of commands you can invoke.
    E.g. if you double-click the ``Pause`` command, you'll get a new window
    where you can press an ``Invoke`` button, and then Mopidy should be paused.

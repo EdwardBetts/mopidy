@@ -199,7 +199,7 @@ class PlaylistsController(object):
 
     def filter(self, criteria=None, **kwargs):
         """
-        Filter playlists by the given criterias.
+        Filter playlists by the given criteria.
 
         Examples::
 
@@ -291,7 +291,7 @@ class PlaylistsController(object):
         Save the playlist.
 
         For a playlist to be saveable, it must have the ``uri`` attribute set.
-        You must not set the ``uri`` atribute yourself, but use playlist
+        You must not set the ``uri`` attribute yourself, but use playlist
         objects returned by :meth:`create` or retrieved from :attr:`playlists`,
         which will always give you saveable playlists.
 

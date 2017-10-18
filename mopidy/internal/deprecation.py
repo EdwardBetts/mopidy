@@ -19,7 +19,7 @@ _MESSAGES = {
     # Deprecated features in audio:
     'audio.emit_end_of_stream': 'audio.emit_end_of_stream() is deprecated',
 
-    # Deprecated features in core libary:
+    # Deprecated features in core library:
     'core.library.find_exact': 'library.find_exact() is deprecated',
     'core.library.lookup:uri_arg':
         'library.lookup() "uri" argument is deprecated',

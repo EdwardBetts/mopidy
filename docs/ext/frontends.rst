@@ -17,7 +17,7 @@ Mopidy-EvtDev
 
 https://github.com/liamw9534/mopidy-evtdev
 
-Extension for controll Mopidy from virtual input devices.
+Extension for control Mopidy from virtual input devices.
 
 
 Mopidy-HTTP
